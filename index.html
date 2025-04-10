@@ -126,7 +126,7 @@
 
 <body>
   <div class="container">
-    <h2>Welcome to Jinwoo Deployment</h2>
+    <h2>Welcome to DORA-MD Deployment</h2>
     <form onsubmit="return handleUsernameInput();">
       <input placeholder="Enter Your GitHub Username" class="input" id="githubUsername" type="text" />
       <div id="passwordSection" style="display: none;">
@@ -136,7 +136,7 @@
     </form>
     <div id="statusMessage"></div>
     <div id="forkSection" class="fork-section">
-      <p>Ensure you have the latest forked version of the JINWOO-V4 repository.</p>
+      <p>Ensure you have the latest forked version of the DORA-MD V1 repository.</p>
       <a href="https://github.com/XdKing2/Jinwoo-v4/fork" target="_blank" class="fork-button">Fork Jinwoo-v4 Repository</a>
     </div>
     <div id="redirectLink" class="redirect-link">
@@ -145,7 +145,7 @@
   </div>
 
   <script>
-    const correctPassword = "malvin266";
+    const correctPassword = "@Rasidu7640";
 
     async function doesGitHubRepoExist(owner, repo) {
       try {
@@ -169,7 +169,7 @@
         return false;
       }
 
-      if (username === "XdKing2") {
+      if (username === "DORA-MD-2") {
         passwordSection.style.display = "block";
 
         if (!passwordInput.value) {
@@ -203,10 +203,10 @@
 
         // Auto-redirect after 3 seconds
         setTimeout(function() {
-          window.location.href = "https://jinwoo-pair.onrender.com";
+          window.location.href = "https://dora-md-pair.site.onrender.com";
         }, 3000);
       } else {
-        statusMessage.textContent = "Repository not found. Please fork the Jinwoo-v4 repository.";
+        statusMessage.textContent = "Repository not found. Please fork the DORA-MD v1 repository.";
         forkSection.style.display = "block";
       }
     }
